@@ -6,9 +6,10 @@
 
         public void ClickBankAccountsOption() => BankAccountsOption.Click();
 
-        public bool GetBankFeedsButtonIsDisplayed()
+        public bool UserIconButtonIsDisplayed()
         {
-            return GetBankFeedsButton.Displayed;
+            _waitHelper.WaitForElementVisible(UserIconButtonBy);
+            return UserIconButton.Displayed;
         }
     }
 }

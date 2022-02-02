@@ -26,7 +26,7 @@ namespace XeroTechTest.Hooks
             var browser = "chrome";
             var headless = false;
             var implicitWait = 2;
-            var Url = "https://www.xero.com/nz/";
+            var Url = "https://login.xero.com/identity/user/login";
 
             IWebDriver driver = FactoryBuilder.GetFactory(browser).SetHeadless(headless).GetDriver();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(implicitWait);
